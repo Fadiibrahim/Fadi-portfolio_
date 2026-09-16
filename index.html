@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fadi Ibrahim, Ph.D., P.Eng. - Interactive Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --sidebar-bg: #f8f9fa;
+      --primary-color: #0d6efd;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #212529;
+    }
+    .sidebar {
+      background-color: var(--sidebar-bg);
+      border-right: 1px solid #dee2e6;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .metric-card {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+    }
+    .metric-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    .metric-label {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    .nav-tabs .nav-link {
+      color: #495057;
+      font-weight: 500;
+    }
+    .nav-tabs .nav-link.active {
+      font-weight: bold;
+      color: var(--primary-color);
+      border-bottom: 3px solid var(--primary-color);
+    }
+    .skill-badge {
+      display: inline-block;
+      margin: 2px;
+      padding: 5px 10px;
+      border-radius: 12px;
+      background-color: #e9ecef;
+      font-size: 0.85rem;
+    }
+    .skill-badge.highlight {
+      background-color: #0d6efd;
+      color: white;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #e7f1ff;
+      color: #0c63e4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- SIDEBAR -->
+      <div class="col-md-3 col-lg-3 sidebar d-md-block">
+        <h4>Fadi Ibrahim, Ph.D., P.Eng.</h4>
+        <p class="text-muted"><strong>Senior Analyst | Data Analytics & Utility Operations | Advanced Process Control</strong></p>
+        <p class="small">
+          📍 Edmonton, AB<br>
+          📧 <a href="mailto:ibrahim.fadi@gmail.com">ibrahim.fadi@gmail.com</a>
+        </p>
+        <p class="small">
+          🔗 <a href="https://linkedin.com/in/fadi-ibrahim" target="_blank">LinkedIn Profile</a> | 
+          <a href="https://orcid.org/0000-0002-8380-2783" target="_blank">ORCID Portfolio</a>
+        </p>
+        <hr>
+        
+        <h5>🎯 Filter Experience by Tech Stack</h5>
+        <p class="small text-muted">Select skills to highlight relevant experience:</p>
+        <div id="skill-checkboxes">
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="Power BI & DAX" id="check1" checked>
+            <label class="form-check-label" for="check1">Power BI & DAX</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="SQL" id="check2" checked>
+            <label class="form-check-label" for="check2">SQL</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="Python" id="check3" checked>
+            <label class="form-check-label" for="check3">Python</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="Power Apps" id="check4">
+            <label class="form-check-label" for="check4">Power Apps</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="Machine Learning" id="check5">
+            <label class="form-check-label" for="check5">Machine Learning</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="AUC Compliance" id="check6">
+            <label class="form-check-label" for="check6">AUC Compliance</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input skill-filter" type="checkbox" value="Process Control & DCS" id="check7">
+            <label class="form-check-label" for="check7">Process Control & DCS</label>
+          </div>
+        </div>
+
+        <hr>
+        <div class="alert alert-info small" role="alert">
+          💡 <strong>Tip:</strong> Built as a static single-page app optimized directly for GitHub Pages hosting!
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT AREA -->
+      <div class="col-md-9 col-lg-9 ms-sm-auto px-md-4 py-4">
+        <!-- HEADER & METRICS -->
+        <div class="row align-items-center mb-4">
+          <div class="col-lg-8">
+            <h1 class="display-6 fw-bold">Fadi Ibrahim, Ph.D., P.Eng.</h1>
+            <p class="text-secondary fw-semibold">Professional Engineer (APEGA) | Ph.D. in Computer Science & Industrial Automation (WES Certified)</p>
+            <p>10+ years of expertise translating complex industrial, utility, and operational data into actionable insights, interactive Power BI/Power Apps solutions, and automated control frameworks.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="metric-card">
+                  <div class="metric-label">Total Experience</div>
+                  <div class="metric-value">10+ Years</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="metric-card">
+                  <div class="metric-label">Dashboards Built</div>
+                  <div class="metric-value">15+ Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAVIGATION TABS -->
+        <ul class="nav nav-tabs mb-4" id="portfolioTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="exp-tab" data-bs-toggle="tab" data-bs-target="#exp" type="button" role="tab">💼 Professional Experience</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab">🛠️ Technical Stack & Skills</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab">🚀 Interactive Project Showcase</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab">📚 Research & Publications</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="portfolioTabContent">
+          <!-- TAB 1: WORK HISTORY -->
+          <div class="tab-pane fade show active" id="exp" role="tabpanel">
+            <h3>Work History & Key Impact</h3>
+            <div class="accordion mt-3" id="experienceAccordion">
+              
+              <!-- EPCOR -->
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#epcor">
+                    🏢 EPCOR — Senior Analyst, Business Controls & Data Analytics (Jan 2026 – Aug 2026)
+                  </button>
+                </h2>
+                <div id="epcor" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Domain:</strong> Utility Operations, Customer Operations, Regulatory Compliance</p>
+                    <div class="mb-2">
+                      <span class="skill-badge" data-skill="AUC Compliance">AUC Compliance</span>
+                      <span class="skill-badge" data-skill="Power BI & DAX">Power BI & DAX</span>
+                      <span class="skill-badge" data-skill="SQL">SQL</span>
+                      <span class="skill-badge" data-skill="Python">Python</span>
+                    </div>
+                    <ul>
+                      <li>Prepared, executed, and submitted recurring time-sensitive reporting packages for <strong>AESO, MSA, Statistics Canada</strong>, ensuring 100% compliance with AUC Rules 021, 004, and 002.</li>
+                      <li>Partnered with Customer Connections Senior PMs to architect 3 end-to-end Power BI dashboards (Rebate Tracking, Urban Infill, Customer Engineering).</li>
+                      <li>Executed monthly data refreshes and maintenance for a portfolio of ~15 Power BI dashboards across Meter Data & Billing, Meter Operations, and Customer Connections.</li>
+                      <li>Analyzed 15-minute interval Advanced Metering Infrastructure (AMI) demand (kW) and consumption (kWh) using SQL, Python, and Excel.</li>
+                      <li>Initiated continuous improvement projects to streamline compliance investigations under Distribution Tariff Policies (Schedules A & B).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ENBRIDGE -->
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#enbridge">
+                    🏢 Enbridge — Operations Training Reporting Analyst (Nov 2024 – Aug 2025)
+                  </button>
+                </h2>
+                <div id="enbridge" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Domain:</strong> Pipeline Operations, Training Analytics, Change Management</p>
+                    <div class="mb-2">
+                      <span class="skill-badge" data-skill="Power Apps">Power Apps</span>
+                      <span class="skill-badge" data-skill="Power BI & DAX">Power BI & DAX</span>
+                    </div>
+                    <ul>
+                      <li>Built a Power Apps canvas app to streamline training workflows and delivered change management documentation.</li>
+                      <li>Designed and maintained Power BI dashboards using Power Query and DAX to track training compliance and executive KPIs.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UALBERTA -->
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ualberta">
+                    🎓 University of Alberta — Research Associate in Process Control & Machine Learning (Sep 2012 – May 2022)
+                  </button>
+                </h2>
+                <div id="ualberta" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Domain:</strong> Industrial Automation, Oil Sands Analytics, Fault Detection</p>
+                    <div class="mb-2">
+                      <span class="skill-badge" data-skill="Machine Learning">Machine Learning</span>
+                      <span class="skill-badge" data-skill="Python">Python</span>
+                      <span class="skill-badge" data-skill="Process Control & DCS">Process Control & DCS</span>
+                    </div>
+                    <ul>
+                      <li>Applied supervised ML to detect water-bitumen interface levels in Primary Separation Vessels (Suncor).</li>
+                      <li>Developed unsupervised Multivariate Statistical Process Control models for early flare event prediction and pump failure detection (Emerson/Suncor).</li>
+                      <li>Managed Process Control & Smart Automation Labs equipped with DeltaV DCS, Opto22, and Matrikon OPC servers.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CRIQ -->
+              <div class="accordion-item mb-2">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#criq">
+                    🌲 Industrial Research Centre of Québec (CRIQ) — R&D Officer (Nov 2010 – Mar 2012)
+                  </button>
+                </h2>
+                <div id="criq" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                  <div class="accordion-body">
+                    <p><strong>Domain:</strong> Sawmill Automation, Wood Processing, Model Predictive Control</p>
+                    <div class="mb-2">
+                      <span class="skill-badge" data-skill="Process Control & DCS">Process Control & DCS</span>
+                      <span class="skill-badge" data-skill="Machine Learning">Machine Learning</span>
+                    </div>
+                    <ul>
+                      <li>Designed Model Predictive Control (MPC) and neural network optimization for industrial ring debarking machines, boosting yield by ~30%.</li>
+                      <li>Co-authored Canadian Patent CA 2780202 for automated wood quality detection.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: TECHNICAL STACK -->
+          <div class="tab-pane fade" id="skills" role="tabpanel">
+            <h3>Technical Stack Breakdown</h3>
+            <div class="row mt-3">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Data & BI Platforms</h5>
+                    <ul>
+                      <li><strong>Power BI & DAX</strong>: ETL, Data Modeling, KPI Design</li>
+                      <li><strong>Microsoft Power Apps</strong>: Canvas Apps, Workflow Automation</li>
+                      <li><strong>Databricks / SQL</strong>: Complex Querying, PL/SQL</li>
+                      <li><strong>Excel</strong>: Advanced Modeling, VBA, Power Query</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Programming & Analytics</h5>
+                    <ul>
+                      <li><strong>Python</strong>: Pandas, NumPy, Scikit-Learn, TensorFlow</li>
+                      <li><strong>MATLAB / Simulink</strong>: MPC, Signal Processing</li>
+                      <li><strong>ML / MLOps</strong>: Supervised/Unsupervised, Anomaly Detection</li>
+                      <li><strong>Version Control</strong>: Git, Azure DevOps</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary">Domain & Regulatory</h5>
+                    <ul>
+                      <li><strong>AUC Rules</strong>: Rule 021, Rule 004, Rule 002</li>
+                      <li><strong>Market Authorities</strong>: AESO, MSA, Statistics Canada</li>
+                      <li><strong>Industrial Systems</strong>: DeltaV DCS, OPC-DA, SCADA</li>
+                      <li><strong>Certifications</strong>: P.Eng. (APEGA), PMP Fundamentals</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: PROJECT SHOWCASE -->
+          <div class="tab-pane fade" id="projects" role="tabpanel">
+            <h3>Interactive Project Showcase</h3>
+            <p class="text-muted">Demonstrating real-world solutions with visual demos, architecture, and video walkthroughs.</p>
+            
+            <div class="mb-4">
+              <label for="projectSelector" class="form-label font-weight-bold">Choose a project to explore:</label>
+              <select class="form-select" id="projectSelector">
+                <option value="urban">Urban Infill Analytics & Dashboard (EPCOR)</option>
+                <option value="powerapps">Power Apps Training Canvas App (Enbridge)</option>
+                <option value="flare">Early Gas Flare Prediction & SPM (UAlberta / Emerson)</option>
+                <option value="debarker">Ring Debarker MPC Optimization (CRIQ)</option>
+              </select>
+            </div>
+
+            <div id="projectDetails" class="p-4 border rounded bg-light">
+              <!-- Dynamically Populated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- TAB 4: RESEARCH & PUBLICATIONS -->
+          <div class="tab-pane fade" id="research" role="tabpanel">
+            <h3>Peer-Reviewed Publications & Patents</h3>
+            <ul class="list-group list-group-flush mt-3">
+              <li class="list-group-item"><strong>Patent:</strong> <em>Method and System for Detecting and Controlling the Quality of Debarking at the Surface of a Wooden Log</em> (CA 2780202)</li>
+              <li class="list-group-item"><strong>IEEE Survey:</strong> <em>Reinforcement Learning in Process Industries: Review and Perspective</em> (IEEE/CAA Journal of Automatica Sinica, 2024) [1]</li>
+              <li class="list-group-item"><strong>Process Control:</strong> <em>Reinforcement Learning Approach to Autonomous PID Tuning</em> (Computers & Chemical Engineering, 2022) [53]</li>
+              <li class="list-group-item"><strong>Environmental Sensing:</strong> <em>Early Determination of Toxicant Concentration in Water Supply Using MHE</em> (Water Research, 2010) [71]</li>
+              <li class="list-group-item"><strong>Industrial SPM:</strong> <em>Hierarchically Distributed Monitoring for the Early Prediction of Gas Flare Events</em> (Ind. Eng. Chem. Res., 2019) [309]</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mt-5">
+        <footer class="text-center text-muted small py-2">
+          Tailored for Fadi Ibrahim, Ph.D., P.Eng. | Hosted on GitHub Pages
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Project Data Dictionary
+    const projects = {
+      urban: {
+        title: "Urban Infill Development Analytics",
+        problem: "Identifying re-development density inside mature neighborhoods to forecast electrical load growth and infrastructure upgrade costs.",
+        tech: "Power BI, SQL, Python, GIS Open Data, Work Orders",
+        media: '<div class="alert alert-secondary">📹 <strong>Video Demo Placeholder:</strong> Screen recording or video walkthrough can be embedded here.</div>'
+      },
+      powerapps: {
+        title: "Operations Training Workflow Automation",
+        problem: "Streamlining manual training tracking into a structured, automated canvas app connected to Power BI reporting.",
+        tech: "Power Apps, SharePoint Lists, Power Query, DAX",
+        media: '<div class="alert alert-secondary">🎞️ <strong>GIF Placeholder:</strong> Animated workflow demo image can be inserted here.</div>'
+      },
+      flare: {
+        title: "Hierarchically Distributed Monitoring for Early Gas Flare Warning",
+        problem: "Extracting unique statistical signatures from autocorrelated plant data to predict flaring events in advance.",
+        tech: "Python, PCA, Slow Feature Analysis (SFA), Wavelet Transform",
+        media: '<div class="alert alert-info">📊 <strong>Statistical Model Details:</strong> Model deployed across Emerson/Suncor plant historians.</div>'
+      },
+      debarker: {
+        title: "Sawmill Debarking Process Optimization",
+        problem: "Optimizing radial force and feed speed to minimize wood fiber loss while maintaining surface quality.",
+        tech: "MATLAB, Neural Networks, Sequential Quadratic Programming (SQP)",
+        media: '<div class="alert alert-info">🌲 <strong>Patent Reference:</strong> CA 2780202</div>'
+      }
+    };
+
+    // Render selected project details
+    const selector = document.getElementById('projectSelector');
+    const container = document.getElementById('projectDetails');
+
+    function renderProject(key) {
+      const p = projects[key];
+      container.innerHTML = `
+        <h4>${p.title}</h4>
+        <p><strong>Problem:</strong> ${p.problem}</p>
+        <p><strong>Tech Stack:</strong> ${p.tech}</p>
+        ${p.media}
+      `;
+    }
+
+    selector.addEventListener('change', (e) => renderProject(e.target.value));
+    renderProject('urban'); // Initial render
+
+    // Skill Filter Highlight Handler
+    const filters = document.querySelectorAll('.skill-filter');
+    const badges = document.querySelectorAll('.skill-badge');
+
+    function updateHighlights() {
+      const activeSkills = Array.from(filters)
+        .filter(c => c.checked)
+        .map(c => c.value);
+
+      badges.forEach(badge => {
+        const skill = badge.getAttribute('data-skill');
+        if (activeSkills.includes(skill)) {
+          badge.classList.add('highlight');
+        } else {
+          badge.classList.remove('highlight');
+        }
+      });
+    }
+
+    filters.forEach(f => f.addEventListener('change', updateHighlights));
+    updateHighlights();
+  </script>
+</body>
+</html>
